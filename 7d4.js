@@ -6,10 +6,21 @@
 //5 - IMPLEMENTAR VALOR RANDÔMICO
 
 let tentativa = null
-const valor = 8
+//const valor = 8    //"valor pré definido"
+
+//implementação do valor aleatório
+//Constantes com valores minimo e máximo
+const min = 0
+const max = 21
+
+//Constante valor recebe numero aleatorio atraves do math.random 
+const valor = Math.floor(Math.random() * (max - min) + min) 
+
+//console.log(valor)
+
 
 for(let numTentativa = 1; numTentativa < 4 && tentativa != valor ; numTentativa++) {
-    let tentativa = prompt(`Jogo da Adivinhação!! Digite num de 0 a 10. Tentativa ${numTentativa} de 3.`)
+    let tentativa = prompt(`Jogo da Adivinhação!! Digite num de ${min} a ${max}. Tentativa ${numTentativa} de 3.`)
     if(tentativa == valor) {
         alert('Parabens você acertou!!!')
         numTentativa = 3
