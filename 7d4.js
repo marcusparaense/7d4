@@ -11,12 +11,12 @@ let tentativa = null
 //implementação do valor aleatório
 //Constantes com valores minimo e máximo
 const min = 0
-const max = 21
+const max = 20
 
 //Constante valor recebe numero aleatorio atraves do math.random 
-const valor = Math.floor(Math.random() * (max - min) + min) 
+const valor = Math.floor(Math.random() * ((max + 1) - min) + min) 
 
-//console.log(valor)
+console.log(valor)
 
 
 for(let numTentativa = 1; numTentativa < 4 && tentativa != valor ; numTentativa++) {
