@@ -4,6 +4,7 @@
 //3 - 3 TENTATIVAS
 //4 - CASO DE FALHAR, MOSTRAR NUMERO AO FINAL
 //5 - IMPLEMENTAR VALOR RANDÔMICO
+//6 - AUMENTAR MAXIMO PARA 20.
 
 let tentativa = null
 //const valor = 8    //"valor pré definido"
